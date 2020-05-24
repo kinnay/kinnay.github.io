@@ -139,11 +139,11 @@ var attribfuncs = [
 	func_lib, func_lib, func_lib,
 	
 	func_lib, func_lib, func_lib, func_lib,
-	func_lib, func_lib, func_lib, func_lib, func_lib,
+	func_lib, func_lib, func_lib, func_lib,
 	
 	func_bool, func_bool, func_bool, func_bool, func_bool,
 	
-	func_lib, func_lib, func_lib, func_lib, func_lib,
+	func_lib, func_lib, func_lib, func_lib, func_lib, func_lib,
 	
 	func_lib, func_lib,
 	
@@ -159,9 +159,9 @@ var sortfuncs = [
 	sort_lib, sort_lib, sort_lib,
 	
 	sort_lib, sort_lib, sort_lib, sort_lib, 
-	sort_lib, sort_lib, sort_lib, sort_lib, sort_lib,
+	sort_lib, sort_lib, sort_lib, sort_lib,
 	
-	sort_plain, sort_plain, sort_plain, sort_plain, sort_plain,
+	sort_plain, sort_plain, sort_plain, sort_plain, sort_plain, sort_plain,
 	
 	sort_lib, sort_lib, sort_lib, sort_lib, sort_lib,
 	
