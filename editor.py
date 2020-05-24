@@ -26,7 +26,7 @@ def enc_version(v):
 	assert v[0] == "v"
 	return int(v[1:])
 def enc_symbols(v): return ["No"].index(v)
-def enc_bool(v): return {"Yes": True, "No": False}[v]
+def enc_bool(v): return {"Yes": 1, "No": 0}[v]
 def enc_size(v): return int(v)
 def enc_lib(v):
 	if v == "":

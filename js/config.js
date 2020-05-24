@@ -141,7 +141,7 @@ var attribfuncs = [
 	func_lib, func_lib, func_lib, func_lib,
 	func_lib, func_lib, func_lib, func_lib,
 	
-	func_bool, func_bool, func_bool, func_bool, func_bool,
+	func_bool, func_bool, func_bool, func_bool, func_bool, func_bool,
 	
 	func_lib, func_lib, func_lib, func_lib, func_lib, func_lib,
 	
