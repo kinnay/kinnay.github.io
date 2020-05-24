@@ -84,6 +84,10 @@ attribs = [
 	
 	("libcurl", dec_lib, enc_lib, "libcurl"),
 	("libz", dec_lib, enc_lib, "libz"),
+	
+	("iwnn", dec_lib, enc_lib, "iWnn"),
+	("havokanim", dec_lib, enc_lib, "Havok-Animation"),
+	("havokcloth", dec_lib, enc_lib, "Havok-Cloth")
 ]
 
 with open("data/games.json") as f:

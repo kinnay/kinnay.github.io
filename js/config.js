@@ -65,7 +65,8 @@ var categories = [
 	3, 3, 3, 3, 3, 3, 3, 3,
 	4, 4, 4, 4, 4, 4,
 	5, 5, 5, 5, 5,
-	6, 6
+	6, 6,
+	7, 7, 7
 ];
 
 var attribnames = [
@@ -83,7 +84,9 @@ var attribnames = [
 	
 	"nwatk", "nwg3d", "nwui2d", "nwfont", "nwvfx2",
 	
-	"libcurl", "libz"
+	"libcurl", "libz",
+	
+	"iwnn", "havokanim", "havokcloth"
 ];
 
 var labels = [
@@ -102,7 +105,9 @@ var labels = [
 	
 	"NW4F-ATK", "NW4F-G3D", "NW4F-UI2D", "NW4F-FONT", "NW4F-VFX2",
 	
-	"libcurl", "libz"
+	"libcurl", "libz",
+	
+	"iWnn", "Havok-Animation", "Havok-Cloth"
 ];
 
 var checked = [
@@ -119,7 +124,9 @@ var checked = [
 	
 	false, false, false, false, false,
 	
-	false, false
+	false, false,
+	
+	false, false, false
 ];
 
 var attribfuncs = [
@@ -137,7 +144,9 @@ var attribfuncs = [
 	
 	func_lib, func_lib, func_lib, func_lib, func_lib,
 	
-	func_lib, func_lib
+	func_lib, func_lib,
+	
+	func_lib, func_lib, func_lib
 ]
 
 var sortfuncs = [
@@ -155,5 +164,7 @@ var sortfuncs = [
 	
 	sort_lib, sort_lib, sort_lib, sort_lib, sort_lib,
 	
-	sort_lib, sort_lib
+	sort_lib, sort_lib,
+	
+	sort_lib, sort_lib, sort_lib
 ];
