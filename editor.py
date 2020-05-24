@@ -138,14 +138,6 @@ class Table(QTableWidget):
 	def __init__(self):
 		super().__init__()
 		
-		self.setColumnCount(len(attribs))
-		self.setRowCount(len(games))
-		
-		self.horizontalHeader().resizeSection(0, 200)
-		self.horizontalHeader().resizeSection(1, 150)
-		self.horizontalHeader().resizeSection(2, 80)
-		self.horizontalHeader().resizeSection(3, 80)
-		
 		self.itemActivated.connect(self.showEditor)
 		
 		self.regenerate()
@@ -153,7 +145,14 @@ class Table(QTableWidget):
 	def regenerate(self):
 		self.clear()
 		
+		self.setColumnCount(len(attribs))
+		self.setRowCount(len(games))
 		self.setHorizontalHeaderLabels([x[3] for x in attribs])
+		
+		self.horizontalHeader().resizeSection(0, 200)
+		self.horizontalHeader().resizeSection(1, 150)
+		self.horizontalHeader().resizeSection(2, 80)
+		self.horizontalHeader().resizeSection(3, 80)
 		
 		for i, game in enumerate(games):
 			for j, attrib in enumerate(attribs):
@@ -206,21 +205,30 @@ class MainWindow(QMainWindow):
 	def __init__(self):
 		super().__init__()
 		
+		self.new = QAction("New")
+		self.new.setShortcut("Ctrl+N")
+		self.new.triggered.connect(self.createNew)
+		
 		self.push = QAction("Push")
 		self.push.setShortcut("Ctrl+P")
 		self.push.triggered.connect(self.pushFile)
 		
 		self.file = QMenu("File")
+		self.file.addAction(self.new)
 		self.file.addAction(self.push)
 		
 		self.menu = QMenuBar()
 		self.menu.addMenu(self.file)
 		self.setMenuBar(self.menu)
 		
-		table = Table()
-		self.setCentralWidget(table)
+		self.table = Table()
+		self.setCentralWidget(self.table)
 		
 		self.resize(1024, 720)
+
+	def createNew(self):
+		games.append({})
+		self.table.regenerate()
 
 	def pushFile(self):
 		import subprocess

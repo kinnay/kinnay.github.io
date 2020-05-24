@@ -3,6 +3,7 @@ function func_plain(v) { return v; }
 function func_hex(v) { return v.toString(16).toUpperCase(); }
 function func_version(v) { return "v" + v; }
 function func_symbols(v) { return ["No"][v]; }
+function func_bool(v) { return ["No", "Yes"][v]; }
 function func_size(v) {
 	var steps = 0;
 	var frac = 0;
@@ -140,7 +141,7 @@ var attribfuncs = [
 	func_lib, func_lib, func_lib, func_lib,
 	func_lib, func_lib, func_lib, func_lib, func_lib,
 	
-	func_lib, func_lib, func_lib, func_lib, func_lib, func_lib,
+	func_bool, func_bool, func_bool, func_bool, func_bool,
 	
 	func_lib, func_lib, func_lib, func_lib, func_lib,
 	
@@ -160,7 +161,7 @@ var sortfuncs = [
 	sort_lib, sort_lib, sort_lib, sort_lib, 
 	sort_lib, sort_lib, sort_lib, sort_lib, sort_lib,
 	
-	sort_lib, sort_lib, sort_lib, sort_lib, sort_lib, sort_lib,
+	sort_plain, sort_plain, sort_plain, sort_plain, sort_plain,
 	
 	sort_lib, sort_lib, sort_lib, sort_lib, sort_lib,
 	
