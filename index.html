@@ -1,2 +1,87 @@
 
-<b>hi</b>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		
+		<style>
+			body {
+				width: 90%;
+				margin: auto;
+				font-family: monospace;
+			}
+			
+			#cats {
+				margin-top: 20px;
+				margin-bottom: 20px;
+				font-size: 16px;
+			}
+			
+			.checkboxes {
+				margin-top: 20px;
+				margin-bottom: 20px;
+				display: flex;
+				flex-wrap: wrap;
+			}
+			
+			.checkbox {
+				flex-grow: 1;
+			}
+			
+			.checkbox input {
+				vertical-align: middle;
+			}
+			
+			.checkbox label {
+				font-size: 16px;
+			}
+			
+			#main {
+				width: 100%;
+				margin: auto;
+				border: 1px solid black;
+				text-align: center;
+				white-space: nowrap;
+				border-spacing: 0;
+			}
+			
+			th, td {
+				border-top: 1px solid black;
+				border-left: 1px solid black;
+			}
+			
+			a {
+				cursor: pointer;
+				user-select: none;
+			}
+			
+			tr:first-child {
+				color: white;
+				background-color: black;
+			}
+			
+			tr:nth-child(2n+3) {
+				background-color: #ddd;
+			}
+		</style>
+	</head>
+	<body>
+		<details id="cats">
+			<summary>Columns (click to expand)</summary>
+			<fieldset class="checkboxes"><legend>Meta:</legend></fieldset>
+			<fieldset class="checkboxes"><legend>Filesize:</legend></fieldset>
+			<fieldset class="checkboxes"><legend>NEX:</legend></fieldset>
+			<fieldset class="checkboxes"><legend>PIA:</legend></fieldset>
+			<fieldset class="checkboxes"><legend>Private:</legend></fieldset>
+			<fieldset class="checkboxes"><legend>NW4F:</legend></fieldset>
+			<fieldset class="checkboxes"><legend>Other:</legend></fieldset>
+		</details>
+		
+		<table id="main">
+		</table>
+		
+		<script src="js/config.js"></script>
+		<script src="js/games.js"></script>
+		<script src="js/ui.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

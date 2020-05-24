@@ -1,0 +1,3 @@
+
+prepareUI();
+prepareGames(updateUI);
