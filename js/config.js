@@ -86,7 +86,7 @@ var attribs = [
 	attrib(Cat.Common, "name", "Name", true, func_plain, sort_plain),
 	attrib(Cat.Common, "aid", "Title ID", true, func_hex, sort_plain),
 	attrib(Cat.Common, "av", "Version", true, func_version, sort_plain),
-	attrib(Cat.Common, "syms", "Symbols", true, func_bool, sort_plain),
+	attrib(Cat.Common, "syms", "Symbols", true, func_size, sort_plain),
 	attrib(Cat.Common, "path", "Path", false, func_plain, sort_plain),
 	attrib(Cat.Common, "sdk", "SDK", true, func_lib, sort_lib),
 	attrib(Cat.Size, "nsosize", "NSO", false, func_size, sort_plain),
