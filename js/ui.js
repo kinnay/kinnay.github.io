@@ -6,17 +6,17 @@ var sortReverse = false;
 
 var checkboxes = [];
 
-function createCheckbox(cat, name, checked) {
+function createCheckbox(attrib) {
 	var box = document.createElement("input");
-	box.checked = checked;
+	box.checked = attrib.checked;
 	box.type = "checkbox";
 	box.onchange = updateUI;
 	
 	var label = document.createElement("label");
 	label.appendChild(box);
-	label.insertAdjacentHTML("beforeend", " " + name);
+	label.insertAdjacentHTML("beforeend", " " + attrib.label);
 	
-	var outer = document.getElementById("cats").children[cat + 1];
+	var outer = document.getElementById("cats").children[attrib.cat + 1];
 	
 	var div = document.createElement("div");
 	div.className = "checkbox";
@@ -30,8 +30,8 @@ function createCheckbox(cat, name, checked) {
 }
 
 function prepareUI() {
-	for (var i = 0; i < attribnames.length; i++) {
-		createCheckbox(categories[i], labels[i], checked[i]);
+	for (var i = 0; i < attribs.length; i++) {
+		createCheckbox(attribs[i]);
 	}
 }
 
@@ -42,7 +42,7 @@ function generateHeaders() {
 	var headers = [];
 	for (var i = 0; i < checkboxes.length; i++) {
 		if (checkboxes[i].checked) {
-			headers.push([i, labels[i]]);
+			headers.push([i, attribs[i].label]);
 		}
 	}
 	return headers;
@@ -51,14 +51,14 @@ function generateHeaders() {
 function generateGame(game) {
 	var elems = [];
 	
-	for (var i = 0; i < attribnames.length; i++) {
+	for (var i = 0; i < attribs.length; i++) {
 		if (checkboxes[i].checked) {
-			var v = game[attribnames[i]];
+			var v = game[attribs[i].name];
 			if (v == undefined) {
 				elems.push("?");
 			}
 			else {
-				elems.push(attribfuncs[i](game[attribnames[i]]));
+				elems.push(attribs[i].fmt(game[attribs[i].name]));
 			}
 		}
 	}
@@ -73,13 +73,13 @@ function sortFunc(a, b) {
 		b = t;
 	}
 	
-	var v1 = a[attribnames[sortIndex]];
-	var v2 = b[attribnames[sortIndex]];
+	var v1 = a[attribs[sortIndex].name];
+	var v2 = b[attribs[sortIndex].name];
 	
 	if (v1 == undefined) return -1;
 	if (v2 == undefined) return 1;
 	
-	return sortfuncs[sortIndex](v1, v2);
+	return attribs[sortIndex].sort(v1, v2);
 }
 
 function generateGames() {
