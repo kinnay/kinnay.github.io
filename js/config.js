@@ -5,11 +5,12 @@ var Cat = {
 	NEX: 2,
 	PIA: 3,
 	Priv: 4,
-	NW: 5,
-	SDK: 6,
-	Lib: 7,
-	Havok: 8,
-	Other: 9
+	FirstParty: 5,
+	NW: 6,
+	SDK: 7,
+	Lib: 8,
+	Havok: 9,
+	Other: 10
 };
 
 function func_plain(v) { return v; }
@@ -126,6 +127,10 @@ var attribs = [
 	attrib(Cat.Priv, "xlink2", "XLINK2", false, func_bool, sort_plain),
 	attrib(Cat.Priv, "lp2", "LP2", false, func_bool, sort_plain),
 	attrib(Cat.Priv, "enl", "ENL", false, func_bool, sort_plain),
+	attrib(Cat.Priv, "eui", "EUI", false, func_bool, sort_plain),
+	attrib(Cat.Priv, "gsys", "GSYS", false, func_bool, sort_plain),
+	attrib(Cat.Priv, "al", "AL", false, func_bool, sort_plain),
+	attrib(Cat.FirstParty, "lms", "LMS", false, func_bool, sort_plain),
 	attrib(Cat.NW, "nwatk", "NW-ATK", false, func_lib, sort_lib),
 	attrib(Cat.NW, "nwg3d", "NW-G3D", false, func_lib, sort_lib),
 	attrib(Cat.NW, "nwui2d", "NW-UI2D", false, func_lib, sort_lib),
