@@ -29,14 +29,37 @@ function createCheckbox(attrib) {
 	return box;
 }
 
+function prepareFilters() {
+	var name = document.getElementById("filter_name");
+	name.oninput = updateUI;
+	
+	var syms = document.getElementById("filter_syms");
+	syms.onchange = updateUI;
+}
+
 function prepareUI() {
 	for (var i = 0; i < attribs.length; i++) {
 		createCheckbox(attribs[i]);
 	}
+	prepareFilters();
 }
 
 
 // Dynamic content
+
+function filterFunc(game) {
+	var name = document.getElementById("filter_name");
+	if (!game.name.toLowerCase().includes(name.value.toLowerCase())) {
+		return false;
+	}
+	
+	var syms = document.getElementById("filter_syms");
+	if (syms.checked && game.syms < 1000000) {
+		return false;
+	}
+	
+	return true;
+}
 
 function generateHeaders() {
 	var headers = [];
@@ -87,7 +110,9 @@ function generateGames() {
 	var games = getGameList(sortFunc);
 	for (var i = 0; i < games.length; i++) {
 		var game = games[i];
-		rows.push(generateGame(game));
+		if (filterFunc(game)) {
+			rows.push(generateGame(game));
+		}
 	}
 	return rows;
 }
