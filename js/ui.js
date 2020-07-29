@@ -29,12 +29,20 @@ function createCheckbox(attrib) {
 	return box;
 }
 
+var filterBoxes = [
+	"filter_syms", "filter_nex", "filter_pia",
+	"filter_sead", "filter_lms", "filter_nw",
+	"filter_v0"
+];
+
 function prepareFilters() {
 	var name = document.getElementById("filter_name");
 	name.oninput = updateUI;
 	
-	var syms = document.getElementById("filter_syms");
-	syms.onchange = updateUI;
+	for (var i = 0; i < filterBoxes.length; i++) {
+		var elem = document.getElementById(filterBoxes[i]);
+		elem.onchange = updateUI;
+	}
 }
 
 function prepareUI() {
@@ -55,6 +63,36 @@ function filterFunc(game) {
 	
 	var syms = document.getElementById("filter_syms");
 	if (syms.checked && game.syms < 1000000) {
+		return false;
+	}
+	
+	var v0 = document.getElementById("filter_v0");
+	if (v0.checked && game.av != 0) {
+		return false;
+	}
+	
+	var nex = document.getElementById("filter_nex");
+	if (nex.checked && game.nex.length == 0) {
+		return false;
+	}
+	
+	var pia = document.getElementById("filter_pia");
+	if (pia.checked && game.pia.length == 0) {
+		return false;
+	}
+	
+	var sead = document.getElementById("filter_sead");
+	if (sead.checked && !game.sead) {
+		return false;
+	}
+	
+	var lms = document.getElementById("filter_lms");
+	if (lms.checked && !game.lms) {
+		return false;
+	}
+	
+	var nw = document.getElementById("filter_nw");
+	if (nw.checked && game.nwg3d.length == 0) {
 		return false;
 	}
 	
