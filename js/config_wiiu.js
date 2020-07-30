@@ -1,5 +1,5 @@
 
-MIN_SYMBOLS = 1000000
+MIN_SYMBOLS = 200000
 
 var Cat = {
 	Common: 0,
@@ -9,10 +9,8 @@ var Cat = {
 	Priv: 4,
 	FirstParty: 5,
 	NW: 6,
-	SDK: 7,
-	Lib: 8,
-	Havok: 9,
-	Other: 10
+	Havok: 7,
+	Other: 8
 };
 
 function func_plain(v) { return v; }
@@ -87,73 +85,66 @@ function attrib(cat, name, lbl, checked, fmt, sort) {
 }
 
 var attribs = [
-	attrib(Cat.Common, "name", "Name", true, func_plain, sort_plain),
+	attrib(Cat.Common, "name", "Short Name", true, func_plain, sort_plain),
+	attrib(Cat.Common, "longname", "Long Name", false, func_plain, sort_plain),
+	attrib(Cat.Common, "publisher", "Publisher", false, func_plain, sort_plain),
+	attrib(Cat.Common, "code", "Product Code", false, func_plain, sort_plain),
+	
 	attrib(Cat.Common, "aid", "Title ID", true, func_hex, sort_plain),
 	attrib(Cat.Common, "av", "Version", true, func_version, sort_plain),
-	attrib(Cat.Common, "syms", "Symbols", true, func_size, sort_plain),
-	attrib(Cat.Common, "path", "Path", false, func_plain, sort_plain),
+	attrib(Cat.Common, "rpx", "Filename", true, func_plain, sort_plain),
 	attrib(Cat.Common, "sdk", "SDK", true, func_lib, sort_lib),
-	attrib(Cat.Size, "nsosize", "NSO", false, func_size, sort_plain),
+	attrib(Cat.Common, "syms", "Symbols", true, func_size, sort_plain),
+	
+	attrib(Cat.Size, "rpxsize", "RPX", false, func_size, sort_plain),
 	attrib(Cat.Size, "textsize", ".text", false, func_size, sort_plain),
 	attrib(Cat.Size, "rodatasize", ".rodata", false, func_size, sort_plain),
 	attrib(Cat.Size, "datasize", ".data", false, func_size, sort_plain),
 	attrib(Cat.Size, "bsssize", ".bss", false, func_size, sort_plain),
+	
 	attrib(Cat.NEX, "nex", "NEX", true, func_lib, sort_lib),
 	attrib(Cat.NEX, "nexrk", "NEX-RK", false, func_lib, sort_lib),
-	attrib(Cat.NEX, "nexr2", "NEX-R2", false, func_lib, sort_lib),
 	attrib(Cat.NEX, "nexds", "NEX-DS", false, func_lib, sort_lib),
 	attrib(Cat.NEX, "nexmm", "NEX-MM", false, func_lib, sort_lib),
+	attrib(Cat.NEX, "nexms", "NEX-MS", false, func_lib, sort_lib),
 	attrib(Cat.NEX, "nexut", "NEX-UT", false, func_lib, sort_lib),
-	attrib(Cat.NEX, "nexss", "NEX-SS", false, func_lib, sort_lib),
-	attrib(Cat.NEX, "nexsc", "NEX-SC", false, func_lib, sort_lib),
-	attrib(Cat.NEX, "nexco", "NEX-CO", false, func_lib, sort_lib),
-	attrib(Cat.NEX, "nexvs", "NEX-VS", false, func_lib, sort_lib),
+	
 	attrib(Cat.PIA, "pia", "PIA", true, func_lib, sort_lib),
 	attrib(Cat.PIA, "piacommon", "PIA-Common", false, func_lib, sort_lib),
 	attrib(Cat.PIA, "piatransport", "PIA-Transport", false, func_lib, sort_lib),
 	attrib(Cat.PIA, "piasession", "PIA-Session", false, func_lib, sort_lib),
-	attrib(Cat.PIA, "pialan", "PIA-Lan", false, func_lib, sort_lib),
-	attrib(Cat.PIA, "pialocal", "PIA-Local", false, func_lib, sort_lib),
-	attrib(Cat.PIA, "pianex", "PIA-Nex", false, func_lib, sort_lib),
 	attrib(Cat.PIA, "piainet", "PIA-Inet", false, func_lib, sort_lib),
-	attrib(Cat.PIA, "pianat", "PIA-Nat", false, func_lib, sort_lib),
 	attrib(Cat.PIA, "piaclone", "PIA-Clone", false, func_lib, sort_lib),
-	attrib(Cat.PIA, "piasync", "PIA-Sync", false, func_lib, sort_lib),
-	attrib(Cat.PIA, "piachat", "PIA-Chat", false, func_lib, sort_lib),
-	attrib(Cat.PIA, "piaframework", "PIA-Framework", false, func_lib, sort_lib),
-	attrib(Cat.PIA, "piareckoning", "PIA-Reckoning", false, func_lib, sort_lib),
-	attrib(Cat.PIA, "piatune", "PIA-Tune", false, func_lib, sort_lib),
+	
 	attrib(Cat.Priv, "sead", "SEAD", false, func_bool, sort_plain),
 	attrib(Cat.Priv, "agl", "AGL", false, func_bool, sort_plain),
 	attrib(Cat.Priv, "aal", "AAL", false, func_bool, sort_plain),
-	attrib(Cat.Priv, "xlink2", "XLINK2", false, func_bool, sort_plain),
-	attrib(Cat.Priv, "lp2", "LP2", false, func_bool, sort_plain),
+	attrib(Cat.Priv, "xlink", "XLINK", false, func_bool, sort_plain),
 	attrib(Cat.Priv, "enl", "ENL", false, func_bool, sort_plain),
-	attrib(Cat.Priv, "eui", "EUI", false, func_bool, sort_plain),
 	attrib(Cat.Priv, "gsys", "GSYS", false, func_bool, sort_plain),
-	attrib(Cat.Priv, "al", "AL", false, func_bool, sort_plain),
+	
+	attrib(Cat.FirstParty, "nwf", "NWF", false, func_lib, sort_lib),
+	attrib(Cat.FirstParty, "ffl", "FFL", false, func_lib, sort_lib),
 	attrib(Cat.FirstParty, "lms", "LMS", false, func_bool, sort_plain),
-	attrib(Cat.NW, "nwatk", "NW-ATK", false, func_lib, sort_lib),
-	attrib(Cat.NW, "nwg3d", "NW-G3D", false, func_lib, sort_lib),
-	attrib(Cat.NW, "nwui2d", "NW-UI2D", false, func_lib, sort_lib),
-	attrib(Cat.NW, "nwfont", "NW-FONT", false, func_lib, sort_lib),
-	attrib(Cat.NW, "nwvfx", "NW-VFX", false, func_lib, sort_lib),
-	attrib(Cat.NW, "nwvfx2", "NW-VFX2", false, func_lib, sort_lib),
-	attrib(Cat.NW, "nwfxt", "NW-FXT", false, func_lib, sort_lib),
-	attrib(Cat.NW, "nwbezel", "NW-BezelEngine", false, func_lib, sort_lib),
-	attrib(Cat.SDK, "libcurl", "libcurl", false, func_lib, sort_lib),
-	attrib(Cat.SDK, "libz", "libz", false, func_lib, sort_lib),
-	attrib(Cat.SDK, "gfx", "gfx", false, func_lib, sort_lib),
-	attrib(Cat.Lib, "glew", "glew", false, func_lib, sort_lib),
-	attrib(Cat.Lib, "lz4", "lz4", false, func_lib, sort_lib),
-	attrib(Cat.Havok, "havok", "Havok", false, func_lib, sort_lib),
-	attrib(Cat.Havok, "havokai", "Havok-AI", false, func_lib, sort_lib),
-	attrib(Cat.Havok, "havokanim", "Havok-Animation", false, func_lib, sort_lib),
-	attrib(Cat.Havok, "havokcloth", "Havok-Cloth", false, func_lib, sort_lib),
-	attrib(Cat.Havok, "havokphysics", "Havok-Physics", false, func_lib, sort_lib),
+	attrib(Cat.FirstParty, "shamo", "ShaMo", false, func_lib, sort_lib),
+	attrib(Cat.FirstParty, "swkbd", "SWKBD", false, func_lib, sort_lib),
+	attrib(Cat.FirstParty, "error", "Error", false, func_lib, sort_lib),
+	
+	attrib(Cat.NW, "nwfnt", "NW-FNT", false, func_lib, sort_lib),
+	attrib(Cat.NW, "nwlyt", "NW-LYT", false, func_lib, sort_lib),
+	attrib(Cat.NW, "nwsnd", "NW-SND", false, func_lib, sort_lib),
+	attrib(Cat.NW, "nwsfnt", "NW-SFNT", false, func_lib, sort_lib),
+	attrib(Cat.NW, "nweft", "NW-EFT", false, func_lib, sort_lib),
+	
+	attrib(Cat.Havok, "hka", "Havok-Animation", false, func_lib, sort_lib),
+	attrib(Cat.Havok, "hkp", "Havok-Physics", false, func_lib, sort_lib),
+	
+	attrib(Cat.Other, "jpeg", "JPEG", false, func_bool, sort_plain),
 	attrib(Cat.Other, "unity", "Unity", false, func_lib, sort_lib),
-	attrib(Cat.Other, "unreal", "Unreal", false, func_lib, sort_lib),
-	attrib(Cat.Other, "gamemaker2", "Game Maker 2", false, func_lib, sort_lib),
-	attrib(Cat.Other, "physx", "PhysX", false, func_lib, sort_lib),
-	attrib(Cat.Other, "iwnn", "iWnn", false, func_lib, sort_lib)
+	attrib(Cat.Other, "iwnn", "iWnn", false, func_lib, sort_lib),
+	attrib(Cat.Other, "scaleform", "Scaleform", false, func_lib, sort_lib),
+	attrib(Cat.Other, "mp4dmx", "MP4dmx", false, func_lib, sort_lib),
+	attrib(Cat.Other, "heaacdec", "HEAACDEC", false, func_lib, sort_lib),
+	attrib(Cat.Other, "pfidpfid", "PFID-PFID", false, func_lib, sort_lib),
+	attrib(Cat.Other, "pfidsmile", "PFID-SMILE", false, func_lib, sort_lib)
 ];

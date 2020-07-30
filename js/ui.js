@@ -41,7 +41,9 @@ function prepareFilters() {
 	
 	for (var i = 0; i < filterBoxes.length; i++) {
 		var elem = document.getElementById(filterBoxes[i]);
-		elem.onchange = updateUI;
+		if (elem) {
+			elem.onchange = updateUI;
+		}
 	}
 }
 
@@ -62,12 +64,12 @@ function filterFunc(game) {
 	}
 	
 	var syms = document.getElementById("filter_syms");
-	if (syms.checked && game.syms < 1000000) {
+	if (syms.checked && game.syms < MIN_SYMBOLS) {
 		return false;
 	}
 	
 	var v0 = document.getElementById("filter_v0");
-	if (v0.checked && game.av != 0) {
+	if (v0 && v0.checked && game.av != 0) {
 		return false;
 	}
 	
