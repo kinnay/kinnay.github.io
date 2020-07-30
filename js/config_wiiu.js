@@ -115,6 +115,7 @@ var attribs = [
 	attrib(Cat.PIA, "piasession", "PIA-Session", false, func_lib, sort_lib),
 	attrib(Cat.PIA, "piainet", "PIA-Inet", false, func_lib, sort_lib),
 	attrib(Cat.PIA, "piaclone", "PIA-Clone", false, func_lib, sort_lib),
+	attrib(Cat.PIA, "piachat", "PIA-Chat", false, func_lib, sort_lib),
 	
 	attrib(Cat.Priv, "sead", "SEAD", false, func_bool, sort_plain),
 	attrib(Cat.Priv, "agl", "AGL", false, func_bool, sort_plain),
@@ -138,6 +139,7 @@ var attribs = [
 	
 	attrib(Cat.Havok, "hka", "Havok-Animation", false, func_lib, sort_lib),
 	attrib(Cat.Havok, "hkp", "Havok-Physics", false, func_lib, sort_lib),
+	attrib(Cat.Havok, "hcl", "Havok-Cloth", false, func_lib, sort_lib),
 	
 	attrib(Cat.Other, "jpeg", "JPEG", false, func_bool, sort_plain),
 	attrib(Cat.Other, "unity", "Unity", false, func_lib, sort_lib),
