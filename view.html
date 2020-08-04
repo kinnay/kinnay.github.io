@@ -1,0 +1,92 @@
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		
+		<style>
+			body {
+				width: 90%;
+				margin: auto;
+				font-family: monospace;
+			}
+			
+			#cats {
+				margin-top: 20px;
+				margin-bottom: 20px;
+				font-size: 16px;
+			}
+			
+			.checkboxes {
+				margin-top: 20px;
+				margin-bottom: 20px;
+				display: flex;
+				flex-wrap: wrap;
+			}
+			
+			.checkbox {
+				flex: 50%;
+			}
+			
+			.checkbox label {
+				font-size: 16px;
+			}
+			
+			#filters {
+				display: flex;
+				flex-wrap: wrap;
+			}
+			
+			.filter {
+				font-size: 16px;
+				margin-right: 20px;
+				margin-bottom: 20px;
+			}
+			
+			#main {
+				width: 100%;
+				margin: auto;
+				margin-bottom: 20px;
+				border: 1px solid black;
+				text-align: left;
+				border-spacing: 0;
+			}
+			
+			input {
+				vertical-align: middle;
+			}
+			
+			th, td {
+				border-top: 1px solid black;
+				border-left: 1px solid black;
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+			
+			a {
+				cursor: pointer;
+				user-select: none;
+			}
+			
+			tr:first-child {
+				color: white;
+				background-color: black;
+			}
+			
+			tr:nth-child(2n+3) {
+				background-color: #ddd;
+			}
+		</style>
+	</head>
+	<body>
+		<details id="cats">
+			<summary>Columns (click to expand)</summary>
+		</details>
+		<div id="filters">
+		</div>
+		
+		<table id="main">
+		</table>
+		
+		<script src="js/main.js"></script>
+	</body>
+</html>
