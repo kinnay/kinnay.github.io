@@ -42,6 +42,12 @@ formatters = [
 		}
 		
 		return s;
+	},
+	function(v) {
+		return `${v[0]} (${v[1]})`
+	},
+	function(v) {
+		return v.toString(16).toUpperCase();
 	}
 ]
 
@@ -79,8 +85,25 @@ function sortLib(a, b) {
 	return 0;
 }
 
+function sortAddr(a, b) {
+	var f1 = a[0].split(".");
+	var f2 = b[0].split(".");
+	if (parseInt(f1[0]) < parseInt(f2[0])) return -1;
+	if (parseInt(f1[0]) > parseInt(f2[0])) return 1;
+	if (parseInt(f1[1]) < parseInt(f2[1])) return -1;
+	if (parseInt(f1[1]) > parseInt(f2[1])) return 1;
+	if (parseInt(f1[2]) < parseInt(f2[2])) return -1;
+	if (parseInt(f1[2]) > parseInt(f2[2])) return 1;
+	if (parseInt(f1[3]) < parseInt(f2[3])) return -1;
+	if (parseInt(f1[3]) > parseInt(f2[3])) return 1;
+	if (a[1] < b[1]) return -1;
+	if (a[1] > b[1]) return 1;
+	return 0;
+}
+
 sorters = [
-	sortPlain, sortPlain, sortTitleId, sortPlain, sortPlain, sortPlain, sortLib
+	sortPlain, sortPlain, sortTitleId, sortPlain, sortPlain,
+	sortPlain, sortLib, sortAddr, sortPlain
 ]
 
 function sortFunc(a, b) {
@@ -262,7 +285,7 @@ function download(path, callback) {
 	req.send();
 }
 
-pages = ["wiiu", "switch"];
+pages = ["wiiu", "switch", "nexwiiu"];
 
 url = new URL(window.location.href);
 page = url.searchParams.get("page")
