@@ -268,9 +268,28 @@ function prepareFilters() {
 	}
 }
 
+function prepareParams() {
+	if (sortName) {
+		for (var i = 0; i < info.fields.length; i++) {
+			if (info.fields[i].key == sortName) {
+				sortIndex = i;
+				break;
+			}
+		}
+	}
+	
+	if (sortDir == "up") {
+		sortReverse = false;
+	}
+	else if (sortDir == "down") {
+		sortReverse = true;
+	}
+}
+
 function prepareUI() {
 	prepareCategories();
 	prepareFilters();
+	prepareParams();
 	updateUI();
 }
 
@@ -289,6 +308,8 @@ pages = ["wiiu", "switch", "nexwiiu"];
 
 url = new URL(window.location.href);
 page = url.searchParams.get("page")
+sortName = url.searchParams.get("sort")
+sortDir = url.searchParams.get("dir")
 
 if (pages.includes(page)) {
 	download("data/" + page + ".json", function(data) {
