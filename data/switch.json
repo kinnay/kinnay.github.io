@@ -14,7 +14,7 @@
 	{"category": 0, "key": "name", "name": "Name", "state": true, "type": 0},
 	{"category": 0, "key": "aid", "name": "Title ID", "state": true, "type": 2},
 	{"category": 0, "key": "av", "name": "Version", "state": true, "type": 4},
-	{"category": 0, "key": "path", "name": "Path", "state": true, "type": 0},
+	{"category": 0, "key": "path", "name": "Path", "state": false, "type": 0},
 	{"category": 0, "key": "syms", "name": "Symbols", "state": true, "type": 5},
 	{"category": 0, "key": "sdk", "name": "SDK", "state": true, "type": 6},
 	{"category": 1, "key": "nsosize", "name": "NSO", "state": false, "type": 5},
