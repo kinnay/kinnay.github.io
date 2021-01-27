@@ -27,7 +27,8 @@ formatters = [
 		}
 	},
 	function(v) {
-		if (v.length == 0) return "";
+		if (v === null) return "";
+		if (v.length == 0) return "Yes";
 		
 		var s = "";
 		for (var i = 0; i < v[0].length; i++) {
@@ -69,6 +70,9 @@ function sortTitleId(a, b) {
 }
 
 function sortLib(a, b) {
+	if (a === null) return -1;
+	if (b === null) return 1;
+	
 	if (a.length == 0) return -1;
 	if (b.length == 0) return 1;
 	
