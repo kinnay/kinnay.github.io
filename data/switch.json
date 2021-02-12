@@ -4,11 +4,11 @@
 	{"name": "Name", "type": "text", "filter": "game.name.toLowerCase().includes(input.value.toLowerCase())"},
 	{"name": "Symbols", "type": "checkbox", "filter": "game.syms >= 1000000"},
 	{"name": "V0", "type": "checkbox", "filter": "game.av == 0"},
-	{"name": "NEX", "type": "checkbox", "filter": "game.nex.length != 0"},
-	{"name": "PIA", "type": "checkbox", "filter": "game.pia.length != 0"},
+	{"name": "NEX", "type": "checkbox", "filter": "game.nex != null"},
+	{"name": "PIA", "type": "checkbox", "filter": "game.pia != null"},
 	{"name": "SEAD", "type": "checkbox", "filter": "game.sead"},
 	{"name": "LMS", "type": "checkbox", "filter": "game.lms"},
-	{"name": "NW", "type": "checkbox", "filter": "game.nwg3d.length != 0"}
+	{"name": "NW", "type": "checkbox", "filter": "game.nwg3d != null"}
 	],
 	"fields": [
 	{"category": 0, "key": "name", "name": "Name", "state": true, "type": 0},
