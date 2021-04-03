@@ -1,7 +1,7 @@
 {
 	"categories": ["Info"],
 	"filters": [
-	{"name": "Name", "type": "text", "filter": "game.name.toLowerCase().includes(input.value.toLowerCase())"}
+	{"id": "name", "name": "Name", "type": "text", "filter": "game.name.toLowerCase().includes(input.value.toLowerCase())"}
 	],
 	"fields": [
 	{"category": 0, "key": "name", "name": "Title Name", "state": true, "type": 0},

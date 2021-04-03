@@ -1,15 +1,15 @@
 {
 "categories": ["Meta", "Filesize", "NEX", "PIA", "Private", "First-Party", "NintendoWare", "Havok", "Other"],
 "filters": [
-	{"name": "Name", "type": "text", "filter": "game.name.toLowerCase().includes(input.value.toLowerCase())"},
-	{"name": "Symbols", "type": "checkbox", "filter": "game.syms >= 200000"},
-	{"name": "NEX", "type": "checkbox", "filter": "game.nex.length != 0"},
-	{"name": "PIA", "type": "checkbox", "filter": "game.pia.length != 0"},
-	{"name": "SEAD", "type": "checkbox", "filter": "game.sead"},
-	{"name": "LMS", "type": "checkbox", "filter": "game.lms"},
-	{"name": "EUR", "type": "checkbox", "filter": "game.region == \"ALL\" || game.region == \"EUR\""},
-	{"name": "USA", "type": "checkbox", "filter": "game.region == \"ALL\" || game.region == \"USA\""},
-	{"name": "JPN", "type": "checkbox", "filter": "game.region == \"ALL\" || game.region == \"JPN\""}
+	{"id": "name", "name": "Name", "type": "text", "filter": "game.name.toLowerCase().includes(input.value.toLowerCase())"},
+	{"id": "syms", "name": "Symbols", "type": "checkbox", "filter": "game.syms >= 200000"},
+	{"id": "nex", "name": "NEX", "type": "checkbox", "filter": "game.nex.length != 0"},
+	{"id": "pia", "name": "PIA", "type": "checkbox", "filter": "game.pia.length != 0"},
+	{"id": "sead", "name": "SEAD", "type": "checkbox", "filter": "game.sead"},
+	{"id": "lms", "name": "LMS", "type": "checkbox", "filter": "game.lms"},
+	{"id": "eur", "name": "EUR", "type": "checkbox", "filter": "game.region == \"ALL\" || game.region == \"EUR\""},
+	{"id": "usa", "name": "USA", "type": "checkbox", "filter": "game.region == \"ALL\" || game.region == \"USA\""},
+	{"id": "jpn", "name": "JPN", "type": "checkbox", "filter": "game.region == \"ALL\" || game.region == \"JPN\""}
 	],
 "fields": [
 	{"category": 0, "key": "name", "name": "Short Name", "state": true, "type": 0},
