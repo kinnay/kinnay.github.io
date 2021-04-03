@@ -6,6 +6,7 @@
 	{"name": "V0", "type": "checkbox", "filter": "game.av == 0"},
 	{"name": "NEX", "type": "checkbox", "filter": "game.nex != null"},
 	{"name": "PIA", "type": "checkbox", "filter": "game.pia != null"},
+	{"name": "NPLN", "type": "checkbox", "filter": "game.npln != null"},
 	{"name": "SEAD", "type": "checkbox", "filter": "game.sead"},
 	{"name": "LMS", "type": "checkbox", "filter": "game.lms"},
 	{"name": "NW", "type": "checkbox", "filter": "game.nwg3d != null"}
