@@ -238,12 +238,18 @@ function prepareFilter(elem, filter) {
 	div.setAttribute("class", "filter");
 	div.innerHTML = filter.name + ": ";
 	
+	var value = url.searchParams.get(filter.id);
+	
 	var input = document.createElement("input");
 	input.setAttribute("type", filter.type);
 	if (filter.type == "text") {
+		input.value = value;
 		input.oninput = updateUI;
 	}
 	else {
+		if (value == "1") {
+			input.checked = true;
+		}
 		input.onchange = updateUI;
 	}
 	div.appendChild(input);
