@@ -46,7 +46,8 @@
 				width: 100%;
 				margin: auto;
 				margin-bottom: 20px;
-				border: 1px solid black;
+				border-right: 1px solid black;
+				border-bottom: 1px solid black;
 				text-align: left;
 				border-spacing: 0;
 			}
@@ -60,6 +61,8 @@
 				border-left: 1px solid black;
 				padding-left: 10px;
 				padding-right: 10px;
+				
+				white-space: nowrap;
 			}
 			
 			a {
@@ -67,13 +70,13 @@
 				user-select: none;
 			}
 			
+			tr:hover {
+				background-color: lightgray;
+			}
+			
 			tr:first-child {
 				color: white;
 				background-color: black;
-			}
-			
-			tr:nth-child(2n+3) {
-				background-color: #ddd;
 			}
 		</style>
 	</head>
