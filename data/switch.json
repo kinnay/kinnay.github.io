@@ -9,7 +9,7 @@
 		{"id": "npln", "name": "NPLN", "type": "checkbox", "filter": "game.npln != null"},
 		{"id": "sead", "name": "SEAD", "type": "checkbox", "filter": "game.sead"},
 		{"id": "lms", "name": "LMS", "type": "checkbox", "filter": "game.lms"},
-		{"id": "nw", "name": "NW", "type": "checkbox", "filter": "game.nwg3d != null || game.nwg3d2 != null"}
+		{"id": "nw", "name": "NW", "type": "checkbox", "filter": "game.nwatk != null || game.nwatk2 != null || game.nwg3d != null || game.nwg3d2 != null || game.nwui2d != null || game.nwfont != null || game.nwvfx != null || game.nwvfx2 != null || game.nwfxt != null || game.nwbezel != null || game.nwbezelnetwork != null || game.nwvfxviewer != null || game.nwmeshoptimizer != null"}
 	],
 	"fields": [
 		{"category": 0, "key": "name", "name": "Name", "state": true, "type": 0},
