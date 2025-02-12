@@ -27,7 +27,7 @@ formatters = [
 		}
 	},
 	function(v) {
-		if (v === null) return "";
+		if (v === null || v === undefined) return "";
 		if (v.length == 0) return "Yes";
 		
 		var s = "";
@@ -70,8 +70,8 @@ function sortTitleId(a, b) {
 }
 
 function sortLib(a, b) {
-	if (a === null) return -1;
-	if (b === null) return 1;
+	if (a === null || a === undefined) return -1;
+	if (b === null || b === undefined) return 1;
 	
 	if (a.length == 0) return -1;
 	if (b.length == 0) return 1;
