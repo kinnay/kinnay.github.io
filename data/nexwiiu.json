@@ -1,58 +1,1325 @@
 {
-	"categories": ["Info"],
+	"categories": [
+		"Info"
+	],
 	"filters": [
-	{"id": "name", "name": "Name", "type": "text", "filter": "game.name.toLowerCase().includes(input.value.toLowerCase())"}
+		{
+			"id": "name",
+			"name": "Name",
+			"type": "text",
+			"filter": "game.name.toLowerCase().includes(input.value.toLowerCase())"
+		}
 	],
 	"fields": [
-	{"category": 0, "key": "name", "name": "Title Name", "state": true, "type": 0},
-	{"category": 0, "key": "aid", "name": "Title ID", "state": false, "type": 1},
-	{"category": 0, "key": "id", "name": "Game Server ID", "state": true, "type": 8},
-	{"category": 0, "key": "key", "name": "Access Key", "state": true, "type": 0},
-	{"category": 0, "key": "addr", "name": "Address", "state": false, "type": 7},
-	{"category": 0, "key": "branch", "name": "Branch Name", "state": true, "type": 0},
-	{"category": 0, "key": "build", "name": "Build Name", "state": true, "type": 0}
+		{
+			"category": 0,
+			"key": "name",
+			"name": "Title Name",
+			"state": true,
+			"type": 0
+		},
+		{
+			"category": 0,
+			"key": "aid",
+			"name": "Title ID",
+			"state": false,
+			"type": 1
+		},
+		{
+			"category": 0,
+			"key": "id",
+			"name": "Game Server ID",
+			"state": true,
+			"type": 8
+		},
+		{
+			"category": 0,
+			"key": "key",
+			"name": "Access Key",
+			"state": true,
+			"type": 0
+		},
+		{
+			"category": 0,
+			"key": "addr",
+			"name": "Address",
+			"state": false,
+			"type": 7
+		},
+		{
+			"category": 0,
+			"key": "branch",
+			"name": "Branch Name",
+			"state": true,
+			"type": 0
+		},
+		{
+			"category": 0,
+			"key": "build",
+			"name": "Build Name",
+			"state": true,
+			"type": 0
+		},
+		{
+			"category": 0,
+			"key": "av",
+			"name": "Version",
+			"state": false,
+			"type": 4
+		},
+		{
+			"category": 0,
+			"key": "nex",
+			"name": "NEX",
+			"state": true,
+			"type": 6
+		}
 	],
 	"games": [
-	{"id": 269485568, "aid": 1407375153038848, "name": "TEKKEN TAG 2 Wii U EDITION", "addr": ["34.208.166.202", 42940], "key": "0f037f64", "branch": "branch:origin/release/ngs/3.4.x.3", "build": "build:3_4_13_3_0"},
-	{"id": 269510912, "aid": 1407375153064192, "name": "MARIO & SONIC SOCHI 2014", "addr": ["34.208.166.202", 43380], "key": "585214a5", "branch": "branch:origin/release/ngs/3.4.x.3", "build": "build:3_4_13_3_0"},
-	{"id": 269543936, "aid": 1407375153097216, "name": "WARRIORS OROCHI 3 Hyper", "addr": ["34.208.166.202", 42800], "key": "d74bb27d", "branch": "branch:origin/release/ngs/3.4.x.3", "build": "build:3_4_13_3_0"},
-	{"id": 269544192, "aid": 1407375153097472, "name": "MARIO KART 8", "addr": ["52.40.192.64", 59200], "key": "25dbf96a", "branch": "branch:origin/project/wup-amk", "build": "build:3_5_16_2011_0"},
-	{"id": 269548288, "aid": 1407375153101568, "name": "Puddle", "addr": ["34.208.166.202", 44460], "key": "afcffb5c", "branch": "branch:origin/release/ngs/3.4.x.3", "build": "build:3_4_13_3_0"},
-	{"id": 269549824, "aid": 1407375153103104, "name": "Nano Assault Neo", "addr": ["34.208.166.202", 44100], "key": "7e484a8e", "branch": "branch:origin/release/ngs/3.4.x.3", "build": "build:3_4_13_3_0"},
-	{"id": 269551872, "aid": 1407375153105152, "name": "NINJA GAIDEN 3: Razor's Edge", "addr": ["34.208.166.202", 43060], "key": "f857b4bd", "branch": "branch:origin/release/ngs/3.4.x.3", "build": "build:3_4_13_3_0"},
-	{"id": 269553152, "aid": 1407375153106432, "name": "Super Smash Bros.", "addr": ["52.40.192.64", 59560], "key": "2869ba38", "branch": "branch:origin/project/appcrf", "build": "build:3_6_35_2000_0"},
-	{"id": 269555456, "aid": 1407375153108736, "name": "Injustice: Gods Among Us", "addr": ["34.208.166.202", 42920], "key": "65e9f4d6", "branch": "branch:origin/release/ngs/3.4.x.3", "build": "build:3_4_13_3_0"},
-	{"id": 269556736, "aid": 1407375153110016, "name": "RTK 12", "addr": ["34.208.166.202", 42700], "key": "bfede098", "branch": "branch:origin/release/ngs/3.4.x.3", "build": "build:3_4_13_3_0"},
-	{"id": 269557504, "aid": 1407375153110784, "name": "Sonic Transformed", "addr": ["34.208.166.202", 43240], "key": "b26a3421", "branch": "branch:origin/release/ngs/3.4.x.3", "build": "build:3_4_13_3_0"},
-	{"id": 269558272, "aid": 1407375153111552, "name": "Trine 2", "addr": ["34.208.166.202", 44180], "key": "f9c35adc", "branch": "branch:origin/release/ngs/3.4.x.3", "build": "build:3_4_13_3_0"},
-	{"id": 269562112, "aid": 1407375153115392, "name": "BIOHAZARD REVELATIONS UE", "addr": ["34.208.166.202", 42500], "key": "59d539a9", "branch": "branch:origin/release/ngs/3.4.x.3", "build": "build:3_4_13_3_0"},
-	{"id": 269563904, "aid": 1407375153117184, "name": "Zen Pinball 2", "addr": ["34.208.166.202", 44140], "key": "2ff15f7e", "branch": "branch:origin/release/ngs/3.4.x.3", "build": "build:3_4_13_3_0"},
-	{"id": 269574400, "aid": 1407375153127680, "name": "XenobladeX", "addr": ["34.208.166.202", 45140], "key": "59d7be84", "branch": "branch:origin/project/wup-ax5", "build": "build:3_5_16_1220_0"},
-	{"id": 269575680, "aid": 1407375153128960, "name": "FotNS: Ken's Rage 2", "addr": ["34.208.166.202", 42780], "key": "9994e29c", "branch": "branch:origin/release/ngs/3.4.x.3", "build": "build:3_4_13_3_0"},
-	{"id": 269594368, "aid": 1407375153147648, "name": "Runner2", "addr": ["34.208.166.202", 44220], "key": "1084452a", "branch": "branch:origin/release/ngs/3.4.x.3", "build": "build:3_4_13_3_0"},
-	{"id": 269651968, "aid": 1407375153205248, "name": "DuckTales: Remastered", "addr": ["34.208.166.202", 44440], "key": "1294a96c", "branch": "branch:origin/release/ngs/3.4.x.3", "build": "build:3_4_13_3_0"},
-	{"id": 269660416, "aid": 1407375153213696, "name": "SONIC LOST WORLD", "addr": ["34.208.166.202", 43260], "key": "69a9fc95", "branch": "branch:origin/release/ngs/3.4.x.3", "build": "build:3_4_13_3_0"},
-	{"id": 269663232, "aid": 1407375153216512, "name": "PIKMIN 3", "addr": ["34.208.166.202", 42540], "key": "f6accfc1", "branch": "branch:origin/release/ngs/3.4.x.3", "build": "build:3_4_13_3_0"},
-	{"id": 269676544, "aid": 1407375153229824, "name": "FAST Racing NEO", "addr": ["34.208.166.202", 44540], "key": "811aa39f", "branch": "branch:origin/release/ngs/3.9.x.200x", "build": "build:3_9_19_2005_0"},
-	{"id": 269676800, "aid": 1407375153230080, "name": "Wii Sports Club", "addr": ["34.208.166.202", 43480], "key": "4d324052", "branch": "branch:origin/project/appsp", "build": "build:3_4_24_4_0"},
-	{"id": 269691392, "aid": 1407375153244672, "name": "Star Wars Pinball", "addr": ["34.208.166.202", 43980], "key": "ecd0e530", "branch": "branch:origin/release/ngs/3.4.x.3", "build": "build:3_4_13_3_0"},
-	{"id": 269764608, "aid": 1407375153317888, "name": "DKC: Tropical Freeze", "addr": ["34.208.166.202", 43220], "key": "7fcf384a", "branch": "branch:origin/release/ngs/3.4.x.3", "build": "build:3_4_13_3_0"},
-	{"id": 269768192, "aid": 1407375153321472, "name": "Animal Crossing Plaza", "addr": ["34.208.166.202", 42600], "key": "7b9b09cb", "branch": "branch:origin/release/ngs/3.5.x.1000", "build": "build:3_5_16_1000_0"},
-	{"id": 269784832, "aid": 1407375153338112, "name": "\u5f79\u6e80 \u9cf3\u51f0", "addr": ["34.208.166.202", 44120], "key": "23aab2d3", "branch": "branch:origin/project/wauj", "build": "build:3_6_21_2002_0"},
-	{"id": 269801728, "aid": 1407375153355008, "name": "PUYOPUYOTETRIS", "addr": ["34.208.166.202", 43140], "key": "4eb0ca36", "branch": "branch:origin/release/ngs/3.5.x.1000", "build": "build:3_5_16_1000_0"},
-	{"id": 269888256, "aid": 1407375153441536, "name": "Splatoon", "addr": ["52.40.192.64", 60200], "key": "6f599f81", "branch": "branch:origin/project/wup-agmj", "build": "build:3_8_15_2004_0"},
-	{"id": 269955840, "aid": 1407375153509120, "name": "SI2", "addr": ["34.208.166.202", 44320], "key": "44adeb87", "branch": "branch:origin/release/ngs/3.6.x.2000", "build": "build:3_6_16_2000_0"},
-	{"id": 269995264, "aid": 1407375153548544, "name": "Hyrule Warriors", "addr": ["34.208.166.202", 43940], "key": "7fcc1f7c", "branch": "branch:origin/release/ngs/3.8.x.200x", "build": "build:3_8_13_2004_0"},
-	{"id": 270064384, "aid": 1407375153617664, "name": "Super Mario Maker", "addr": ["52.40.192.64", 59900], "key": "9f2b4678", "branch": "branch:origin/project/wup-ama", "build": "build:3_8_29_3022_0"},
-	{"id": 270074624, "aid": 1407375153627904, "name": "Mario & Sonic Rio 2016", "addr": ["34.208.166.202", 42520], "key": "63fecb0f", "branch": "branch:origin/release/ngs/3.9.x.200x", "build": "build:3_9_19_2005_0"},
-	{"id": 270086912, "aid": 1407375153640192, "name": "Legend of Kay", "addr": ["34.208.166.202", 43660], "key": "478232f3", "branch": "branch:origin/release/ngs/3.8.x.200x", "build": "build:3_8_13_2004_0"},
-	{"id": 270110464, "aid": 1407375153663744, "name": "Terraria", "addr": ["34.208.166.202", 43900], "key": "3d37fbdb", "branch": "branch:origin/release/ngs/3.8.x.200x", "build": "build:3_8_13_2004_0"},
-	{"id": 270110720, "aid": 1407375153664000, "name": "Mario Tennis: Ultra Smash", "addr": ["34.208.166.202", 43460], "key": "c69b92a0", "branch": "branch:origin/release/ngs/3.9.x.200x", "build": "build:3_9_19_2005_0"},
-	{"id": 270163456, "aid": 1407375153716736, "name": "OlliOlli", "addr": ["34.208.166.202", 42960], "key": "60e5df12", "branch": "branch:origin/release/ngs/3.6.x.2000", "build": "build:3_6_16_2000_0"},
-	{"id": 270273024, "aid": 1407375153826304, "name": "Nova-111", "addr": ["34.208.166.202", 43040], "key": "bafe9856", "branch": "branch:origin/release/ngs/3.8.x.200x", "build": "build:3_8_13_2004_0"},
-	{"id": 270292992, "aid": 1407375153846272, "name": "POKK\u00c9N TOURNAMENT", "addr": ["34.208.166.202", 44800], "key": "6ef3adf1", "branch": "branch:origin/release/ngs/3.10.x.200x", "build": "build:3_10_22_2006_0"},
-	{"id": 270293504, "aid": 1407375153846784, "name": "Mighty No. 9", "addr": ["34.208.166.202", 42980], "key": "bb980c2e", "branch": "branch:origin/release/ngs/3.9.x.200x", "build": "build:3_9_19_2005_0"},
-	{"id": 270376192, "aid": 1407375153929472, "name": "Minecraft: Wii U Edition", "addr": ["52.40.192.64", 60100], "key": "f1b61c8e", "branch": "branch:origin/release/ngs/3.10.x.200x", "build": "build:3_10_22_2006_0"},
-	{"id": 270498048, "aid": 1407375154051328, "name": "Axiom Verge", "addr": ["34.208.166.202", 43420], "key": "24e0a63b", "branch": "branch:origin/release/ngs/3.10.x.200x", "build": "build:3_10_22_2006_0"}
+		{
+			"id": 269599488,
+			"aid": 1407375153152768,
+			"av": 0,
+			"name": "ASM",
+			"addr": [
+				"34.208.166.202",
+				43000
+			],
+			"key": "2be6571b",
+			"branch": "branch:origin/release/ngs/3.4.x.3",
+			"build": "build:3_4_16_3_0",
+			"nex": [
+				[
+					3,
+					0,
+					1
+				]
+			]
+		},
+		{
+			"id": 269770240,
+			"aid": 1407375153323520,
+			"av": 0,
+			"name": "Angry Birds Star Wars",
+			"addr": [
+				"34.208.166.202",
+				42740
+			],
+			"key": "38dd2953",
+			"branch": "branch:origin/release/ngs/3.4.x.3",
+			"build": "build:3_4_16_3_0",
+			"nex": [
+				[
+					3,
+					4,
+					0
+				]
+			]
+		},
+		{
+			"id": 269715968,
+			"aid": 1407375153269248,
+			"av": 1,
+			"name": "Angry Birds Trilogy",
+			"addr": [
+				"34.208.166.202",
+				43100
+			],
+			"key": "f4c903e7",
+			"branch": "branch:origin/release/ngs/3.4.x.3",
+			"build": "build:3_4_16_3_0",
+			"nex": [
+				[
+					3,
+					0,
+					1
+				]
+			]
+		},
+		{
+			"id": 269768192,
+			"aid": 1407375153321472,
+			"av": 16,
+			"name": "Animal Crossing Plaza",
+			"addr": [
+				"34.208.166.202",
+				42600
+			],
+			"key": "7b9b09cb",
+			"branch": "branch:origin/release/ngs/3.5.x.1000",
+			"build": "build:3_5_20_1000_0",
+			"nex": [
+				[
+					3,
+					5,
+					1
+				]
+			]
+		},
+		{
+			"id": 269701120,
+			"aid": 1407375153254400,
+			"av": 16,
+			"name": "Art of Balance",
+			"addr": [
+				"34.208.166.202",
+				44000
+			],
+			"key": "96900116",
+			"branch": "branch:origin/release/ngs/3.7.x.2001",
+			"build": "build:3_7_19_2001_0",
+			"nex": [
+				[
+					3,
+					7,
+					1
+				]
+			]
+		},
+		{
+			"id": 270498048,
+			"aid": 1407375154051328,
+			"av": 16,
+			"name": "Axiom Verge",
+			"addr": [
+				"34.208.166.202",
+				43420
+			],
+			"key": "24e0a63b",
+			"branch": "branch:origin/release/ngs/3.10.x.200x",
+			"build": "build:3_10_26_2006_0",
+			"nex": [
+				[
+					3,
+					10,
+					0
+				]
+			]
+		},
+		{
+			"id": 270116352,
+			"aid": 1407375153669632,
+			"av": 0,
+			"name": "BADLAND",
+			"addr": [
+				"34.208.166.202",
+				43560
+			],
+			"key": "a0c9b2a3",
+			"branch": "branch:origin/release/ngs/3.8.x.200x",
+			"build": "build:3_8_15_2004_0",
+			"nex": [
+				[
+					3,
+					8,
+					3
+				]
+			]
+		},
+		{
+			"id": 269596928,
+			"aid": 1407375153150208,
+			"av": 1,
+			"name": "BAYONETTA 2",
+			"addr": [
+				"34.208.166.202",
+				43160
+			],
+			"key": "fd40a3cc",
+			"branch": "branch:origin/release/ngs/3.5.x.1000",
+			"build": "build:3_5_20_1000_0",
+			"nex": [
+				[
+					3,
+					5,
+					2
+				]
+			]
+		},
+		{
+			"id": 269562112,
+			"aid": 1407375153115392,
+			"av": 16,
+			"name": "BIOHAZARD REVELATIONS UE",
+			"addr": [
+				"34.208.166.202",
+				42500
+			],
+			"key": "59d539a9",
+			"branch": "branch:origin/release/ngs/3.4.x.3",
+			"build": "build:3_4_16_3_0",
+			"nex": [
+				[
+					3,
+					2,
+					1
+				]
+			]
+		},
+		{
+			"id": 269564416,
+			"aid": 1407375153117696,
+			"av": 0,
+			"name": "CastleStorm",
+			"addr": [
+				"34.208.166.202",
+				44340
+			],
+			"key": "73aed128",
+			"branch": "branch:origin/release/ngs/3.4.x.3",
+			"build": "build:3_4_16_3_0",
+			"nex": [
+				[
+					3,
+					4,
+					0
+				]
+			]
+		},
+		{
+			"id": 269986816,
+			"aid": 1407375153540096,
+			"av": 0,
+			"name": "Chariot",
+			"addr": [
+				"34.208.166.202",
+				44260
+			],
+			"key": "c9403f7f",
+			"branch": "branch:origin/release/ngs/3.7.x.2001",
+			"build": "build:3_7_19_2001_0",
+			"nex": [
+				[
+					3,
+					7,
+					1
+				]
+			]
+		},
+		{
+			"id": 269664256,
+			"aid": 1407375153217536,
+			"av": 0,
+			"name": "D&D: Chronicles of Mystara\u2122",
+			"addr": [
+				"34.208.166.202",
+				44420
+			],
+			"key": "9af3073a",
+			"branch": "branch:origin/release/ngs/3.4.x.3",
+			"build": "build:3_4_16_3_0",
+			"nex": [
+				[
+					3,
+					2,
+					1
+				]
+			]
+		},
+		{
+			"id": 269764608,
+			"aid": 1407375153317888,
+			"av": 17,
+			"name": "DKC: Tropical Freeze",
+			"addr": [
+				"34.208.166.202",
+				43220
+			],
+			"key": "7fcf384a",
+			"branch": "branch:origin/release/ngs/3.4.x.3",
+			"build": "build:3_4_16_3_0",
+			"nex": [
+				[
+					3,
+					4,
+					0
+				]
+			]
+		},
+		{
+			"id": 269812480,
+			"aid": 1407375153365760,
+			"av": 0,
+			"name": "Dr.LUIGI & \u7d30\u83cc\u64b2\u6ec5",
+			"addr": [
+				"34.208.166.202",
+				44080
+			],
+			"key": "2a724fa4",
+			"branch": "branch:origin/release/ngs/3.5.x.1000",
+			"build": "build:3_5_20_1000_0",
+			"nex": [
+				[
+					3,
+					5,
+					2
+				]
+			]
+		},
+		{
+			"id": 269651968,
+			"aid": 1407375153205248,
+			"av": 32,
+			"name": "DuckTales: Remastered",
+			"addr": [
+				"34.208.166.202",
+				44440
+			],
+			"key": "1294a96c",
+			"branch": "branch:origin/release/ngs/3.4.x.3",
+			"build": "build:3_4_16_3_0",
+			"nex": [
+				[
+					3,
+					3,
+					0
+				]
+			]
+		},
+		{
+			"id": 269687040,
+			"aid": 1407375153240320,
+			"av": 0,
+			"name": "F1 RACE STARS",
+			"addr": [
+				"34.208.166.202",
+				42680
+			],
+			"key": "3ddd4d51",
+			"branch": "branch:origin/release/ngs/3.4.x.3",
+			"build": "build:3_4_16_3_0",
+			"nex": [
+				[
+					3,
+					0,
+					1
+				]
+			]
+		},
+		{
+			"id": 269676544,
+			"aid": 1407375153229824,
+			"av": 65,
+			"name": "FAST Racing NEO",
+			"addr": [
+				"34.208.166.202",
+				44540
+			],
+			"key": "811aa39f",
+			"branch": "branch:origin/release/ngs/3.9.x.200x",
+			"build": "build:3_9_21_2005_0",
+			"nex": [
+				[
+					3,
+					9,
+					1
+				]
+			]
+		},
+		{
+			"id": 269575680,
+			"aid": 1407375153128960,
+			"av": 32,
+			"name": "FotNS: Ken's Rage 2",
+			"addr": [
+				"34.208.166.202",
+				42780
+			],
+			"key": "9994e29c",
+			"branch": "branch:origin/release/ngs/3.4.x.3",
+			"build": "build:3_4_16_3_0",
+			"nex": [
+				[
+					3,
+					0,
+					1
+				]
+			]
+		},
+		{
+			"id": 269542400,
+			"aid": 1407375153095680,
+			"av": 0,
+			"name": "Game Party",
+			"addr": [
+				"34.208.166.202",
+				42720
+			],
+			"key": "fa6cb594",
+			"branch": "branch:origin/release/ngs/3.4.x.3",
+			"build": "build:3_4_16_3_0",
+			"nex": [
+				[
+					3,
+					0,
+					1
+				]
+			]
+		},
+		{
+			"id": 269759232,
+			"aid": 1407375153312512,
+			"av": 1,
+			"name": "Hot Wheels\u2122 WBD",
+			"addr": [
+				"34.208.166.202",
+				42880
+			],
+			"key": "783a01d2",
+			"branch": "branch:origin/release/ngs/3.4.x.3",
+			"build": "build:3_4_16_3_0",
+			"nex": [
+				[
+					3,
+					0,
+					1
+				]
+			]
+		},
+		{
+			"id": 269995264,
+			"aid": 1407375153548544,
+			"av": 272,
+			"name": "Hyrule Warriors",
+			"addr": [
+				"34.208.166.202",
+				43940
+			],
+			"key": "7fcc1f7c",
+			"branch": "branch:origin/release/ngs/3.8.x.200x",
+			"build": "build:3_8_15_2004_0",
+			"nex": [
+				[
+					3,
+					6,
+					1
+				]
+			]
+		},
+		{
+			"id": 269555456,
+			"aid": 1407375153108736,
+			"av": 16,
+			"name": "Injustice: Gods Among Us",
+			"addr": [
+				"34.208.166.202",
+				42920
+			],
+			"key": "65e9f4d6",
+			"branch": "branch:origin/release/ngs/3.4.x.3",
+			"build": "build:3_4_16_3_0",
+			"nex": [
+				[
+					3,
+					0,
+					1
+				]
+			]
+		},
+		{
+			"id": 269564672,
+			"aid": 1407375153117952,
+			"av": 0,
+			"name": "KickBeat",
+			"addr": [
+				"34.208.166.202",
+				44580
+			],
+			"key": "c6978524",
+			"branch": "branch:origin/release/ngs/3.4.x.3",
+			"build": "build:3_4_16_3_0",
+			"nex": [
+				[
+					3,
+					4,
+					0
+				]
+			]
+		},
+		{
+			"id": 270086912,
+			"aid": 1407375153640192,
+			"av": 16,
+			"name": "Legend of Kay",
+			"addr": [
+				"34.208.166.202",
+				43660
+			],
+			"key": "478232f3",
+			"branch": "branch:origin/release/ngs/3.8.x.200x",
+			"build": "build:3_8_15_2004_0",
+			"nex": [
+				[
+					3,
+					8,
+					3
+				]
+			]
+		},
+		{
+			"id": 269510912,
+			"aid": 1407375153064192,
+			"av": 32,
+			"name": "MARIO & SONIC SOCHI 2014",
+			"addr": [
+				"34.208.166.202",
+				43380
+			],
+			"key": "585214a5",
+			"branch": "branch:origin/release/ngs/3.4.x.3",
+			"build": "build:3_4_16_3_0",
+			"nex": [
+				[
+					3,
+					4,
+					0
+				]
+			]
+		},
+		{
+			"id": 270074624,
+			"aid": 1407375153627904,
+			"av": 48,
+			"name": "Mario & Sonic Rio 2016",
+			"addr": [
+				"34.208.166.202",
+				42520
+			],
+			"key": "63fecb0f",
+			"branch": "branch:origin/release/ngs/3.9.x.200x",
+			"build": "build:3_9_21_2005_0",
+			"nex": [
+				[
+					3,
+					9,
+					1
+				]
+			]
+		},
+		{
+			"id": 270110720,
+			"aid": 1407375153664000,
+			"av": 32,
+			"name": "Mario Tennis: Ultra Smash",
+			"addr": [
+				"34.208.166.202",
+				43460
+			],
+			"key": "c69b92a0",
+			"branch": "branch:origin/release/ngs/3.9.x.200x",
+			"build": "build:3_9_21_2005_0",
+			"nex": [
+				[
+					3,
+					9,
+					1
+				]
+			]
+		},
+		{
+			"id": 270293504,
+			"aid": 1407375153846784,
+			"av": 32,
+			"name": "Mighty No. 9",
+			"addr": [
+				"34.208.166.202",
+				42980
+			],
+			"key": "bb980c2e",
+			"branch": "branch:origin/release/ngs/3.9.x.200x",
+			"build": "build:3_9_21_2005_0",
+			"nex": [
+				[
+					3,
+					9,
+					1
+				]
+			]
+		},
+		{
+			"id": 270376192,
+			"aid": 1407375153929472,
+			"av": 688,
+			"name": "Minecraft: Wii U Edition",
+			"addr": [
+				"52.40.192.64",
+				60100
+			],
+			"key": "f1b61c8e",
+			"branch": "branch:origin/release/ngs/3.10.x.200x",
+			"build": "build:3_10_26_2006_0",
+			"nex": [
+				[
+					3,
+					9,
+					1
+				]
+			]
+		},
+		{
+			"id": 269551872,
+			"aid": 1407375153105152,
+			"av": 64,
+			"name": "NINJA GAIDEN 3: Razor's Edge",
+			"addr": [
+				"34.208.166.202",
+				43060
+			],
+			"key": "f857b4bd",
+			"branch": "branch:origin/release/ngs/3.4.x.3",
+			"build": "build:3_4_16_3_0",
+			"nex": [
+				[
+					3,
+					0,
+					1
+				]
+			]
+		},
+		{
+			"id": 269549824,
+			"aid": 1407375153103104,
+			"av": 17,
+			"name": "Nano Assault Neo",
+			"addr": [
+				"34.208.166.202",
+				44100
+			],
+			"key": "7e484a8e",
+			"branch": "branch:origin/release/ngs/3.4.x.3",
+			"build": "build:3_4_16_3_0",
+			"nex": [
+				[
+					3,
+					0,
+					1
+				]
+			]
+		},
+		{
+			"id": 270273024,
+			"aid": 1407375153826304,
+			"av": 16,
+			"name": "Nova-111",
+			"addr": [
+				"34.208.166.202",
+				43040
+			],
+			"key": "bafe9856",
+			"branch": "branch:origin/release/ngs/3.8.x.200x",
+			"build": "build:3_8_15_2004_0",
+			"nex": [
+				[
+					3,
+					8,
+					3
+				]
+			]
+		},
+		{
+			"id": 270163456,
+			"aid": 1407375153716736,
+			"av": 16,
+			"name": "OlliOlli",
+			"addr": [
+				"34.208.166.202",
+				42960
+			],
+			"key": "60e5df12",
+			"branch": "branch:origin/release/ngs/3.6.x.2000",
+			"build": "build:3_6_19_2000_0",
+			"nex": [
+				[
+					3,
+					6,
+					1
+				]
+			]
+		},
+		{
+			"id": 269663232,
+			"aid": 1407375153216512,
+			"av": 96,
+			"name": "PIKMIN 3",
+			"addr": [
+				"34.208.166.202",
+				42540
+			],
+			"key": "f6accfc1",
+			"branch": "branch:origin/release/ngs/3.4.x.3",
+			"build": "build:3_4_16_3_0",
+			"nex": [
+				[
+					3,
+					3,
+					0
+				]
+			]
+		},
+		{
+			"id": 270292992,
+			"aid": 1407375153846272,
+			"av": 64,
+			"name": "POKK\u00c9N TOURNAMENT",
+			"addr": [
+				"34.208.166.202",
+				44800
+			],
+			"key": "6ef3adf1",
+			"branch": "branch:origin/release/ngs/3.10.x.200x",
+			"build": "build:3_10_26_2006_0",
+			"nex": [
+				[
+					3,
+					10,
+					0
+				]
+			]
+		},
+		{
+			"id": 269801728,
+			"aid": 1407375153355008,
+			"av": 32,
+			"name": "PUYOPUYOTETRIS",
+			"addr": [
+				"34.208.166.202",
+				43140
+			],
+			"key": "4eb0ca36",
+			"branch": "branch:origin/release/ngs/3.5.x.1000",
+			"build": "build:3_5_20_1000_0",
+			"nex": [
+				[
+					3,
+					5,
+					2
+				]
+			]
+		},
+		{
+			"id": 269548288,
+			"aid": 1407375153101568,
+			"av": 16,
+			"name": "Puddle",
+			"addr": [
+				"34.208.166.202",
+				44460
+			],
+			"key": "afcffb5c",
+			"branch": "branch:origin/release/ngs/3.4.x.3",
+			"build": "build:3_4_16_3_0",
+			"nex": [
+				[
+					3,
+					0,
+					1
+				]
+			]
+		},
+		{
+			"id": 269775872,
+			"aid": 1407375153329152,
+			"av": 16,
+			"name": "Pure Chess",
+			"addr": [
+				"34.208.166.202",
+				44280
+			],
+			"key": "7b7253c0",
+			"branch": "branch:origin/release/ngs/3.4.x.3",
+			"build": "build:3_4_16_3_0",
+			"nex": [
+				[
+					3,
+					4,
+					0
+				]
+			]
+		},
+		{
+			"id": 270472192,
+			"aid": 1407375154025472,
+			"av": 32,
+			"name": "Quest of Dungeons",
+			"addr": [
+				"34.208.166.202",
+				43800
+			],
+			"key": "7c17c0da",
+			"branch": "branch:origin/release/ngs/3.10.x.200x",
+			"build": "build:3_10_26_2006_0",
+			"nex": [
+				[
+					3,
+					10,
+					0
+				]
+			]
+		},
+		{
+			"id": 269556736,
+			"aid": 1407375153110016,
+			"av": 33,
+			"name": "RTK 12",
+			"addr": [
+				"34.208.166.202",
+				42700
+			],
+			"key": "bfede098",
+			"branch": "branch:origin/release/ngs/3.4.x.3",
+			"build": "build:3_4_16_3_0",
+			"nex": [
+				[
+					3,
+					0,
+					1
+				]
+			]
+		},
+		{
+			"id": 269594368,
+			"aid": 1407375153147648,
+			"av": 48,
+			"name": "Runner2",
+			"addr": [
+				"34.208.166.202",
+				44220
+			],
+			"key": "1084452a",
+			"branch": "branch:origin/release/ngs/3.4.x.3",
+			"build": "build:3_4_16_3_0",
+			"nex": [
+				[
+					3,
+					0,
+					1
+				]
+			]
+		},
+		{
+			"id": 269955840,
+			"aid": 1407375153509120,
+			"av": 32,
+			"name": "SI2",
+			"addr": [
+				"34.208.166.202",
+				44320
+			],
+			"key": "44adeb87",
+			"branch": "branch:origin/release/ngs/3.6.x.2000",
+			"build": "build:3_6_19_2000_0",
+			"nex": [
+				[
+					3,
+					6,
+					1
+				]
+			]
+		},
+		{
+			"id": 269660416,
+			"aid": 1407375153213696,
+			"av": 48,
+			"name": "SONIC LOST WORLD",
+			"addr": [
+				"34.208.166.202",
+				43260
+			],
+			"key": "69a9fc95",
+			"branch": "branch:origin/release/ngs/3.4.x.3",
+			"build": "build:3_4_16_3_0",
+			"nex": [
+				[
+					3,
+					3,
+					0
+				]
+			]
+		},
+		{
+			"id": 269557504,
+			"aid": 1407375153110784,
+			"av": 48,
+			"name": "Sonic Transformed",
+			"addr": [
+				"34.208.166.202",
+				43240
+			],
+			"key": "b26a3421",
+			"branch": "branch:origin/release/ngs/3.4.x.3",
+			"build": "build:3_4_16_3_0",
+			"nex": [
+				[
+					3,
+					0,
+					1
+				]
+			]
+		},
+		{
+			"id": 269888256,
+			"aid": 1407375153441536,
+			"av": 288,
+			"name": "Splatoon",
+			"addr": [
+				"52.40.192.64",
+				60200
+			],
+			"key": "6f599f81",
+			"branch": "branch:origin/project/wup-agmj",
+			"build": "build:3_8_15_2004_0",
+			"nex": [
+				[
+					3,
+					8,
+					3
+				],
+				"AGM"
+			]
+		},
+		{
+			"id": 270265088,
+			"aid": 1407375153818368,
+			"av": 0,
+			"name": "Star Fox Guard",
+			"addr": [
+				"34.208.166.202",
+				43920
+			],
+			"key": "eb97785d",
+			"branch": "branch:origin/release/ngs/3.8.x.200x",
+			"build": "build:3_8_15_2004_0",
+			"nex": [
+				[
+					3,
+					8,
+					2
+				]
+			]
+		},
+		{
+			"id": 269691392,
+			"aid": 1407375153244672,
+			"av": 48,
+			"name": "Star Wars Pinball",
+			"addr": [
+				"34.208.166.202",
+				43980
+			],
+			"key": "ecd0e530",
+			"branch": "branch:origin/release/ngs/3.4.x.3",
+			"build": "build:3_4_16_3_0",
+			"nex": [
+				[
+					3,
+					0,
+					1
+				]
+			]
+		},
+		{
+			"id": 270064384,
+			"aid": 1407375153617664,
+			"av": 272,
+			"name": "Super Mario Maker",
+			"addr": [
+				"52.40.192.64",
+				59900
+			],
+			"key": "9f2b4678",
+			"branch": "branch:origin/project/wup-ama",
+			"build": "build:3_8_32_3022_0",
+			"nex": [
+				[
+					3,
+					8,
+					3
+				],
+				"AMA"
+			]
+		},
+		{
+			"id": 270483456,
+			"aid": 1407375154036736,
+			"av": 0,
+			"name": "Super Meat Boy",
+			"addr": [
+				"34.208.166.202",
+				42640
+			],
+			"key": "d09d204b",
+			"branch": "branch:origin/release/ngs/3.10.x.200x",
+			"build": "build:3_10_26_2006_0",
+			"nex": [
+				[
+					3,
+					10,
+					0
+				]
+			]
+		},
+		{
+			"id": 269553152,
+			"aid": 1407375153106432,
+			"av": 304,
+			"name": "Super Smash Bros.",
+			"addr": [
+				"52.40.192.64",
+				59560
+			],
+			"key": "2869ba38",
+			"branch": "branch:origin/project/appcrf",
+			"build": "build:3_6_35_2001_0",
+			"nex": [
+				[
+					3,
+					6,
+					14
+				],
+				"AXFJ"
+			]
+		},
+		{
+			"id": 269650944,
+			"aid": 1407375153204224,
+			"av": 0,
+			"name": "TANK! TANK! TANK! (DL)",
+			"addr": [
+				"34.208.166.202",
+				44040
+			],
+			"key": "f2b5cc0a",
+			"branch": "branch:origin/release/ngs/3.4.x.3",
+			"build": "build:3_4_16_3_0",
+			"nex": [
+				[
+					3,
+					0,
+					1
+				]
+			]
+		},
+		{
+			"id": 269485568,
+			"aid": 1407375153038848,
+			"av": 16,
+			"name": "TEKKEN TAG 2 Wii U EDITION",
+			"addr": [
+				"34.208.166.202",
+				42940
+			],
+			"key": "0f037f64",
+			"branch": "branch:origin/release/ngs/3.4.x.3",
+			"build": "build:3_4_16_3_0",
+			"nex": [
+				[
+					3,
+					0,
+					1
+				]
+			]
+		},
+		{
+			"id": 269756416,
+			"aid": 1407375153309696,
+			"av": 0,
+			"name": "TNT Racers",
+			"addr": [
+				"34.208.166.202",
+				44160
+			],
+			"key": "6d8b99bf",
+			"branch": "branch:origin/release/ngs/3.4.x.3",
+			"build": "build:3_4_16_3_0",
+			"nex": [
+				[
+					3,
+					2,
+					1
+				]
+			]
+		},
+		{
+			"id": 270110464,
+			"aid": 1407375153663744,
+			"av": 32,
+			"name": "Terraria",
+			"addr": [
+				"34.208.166.202",
+				43900
+			],
+			"key": "3d37fbdb",
+			"branch": "branch:origin/release/ngs/3.8.x.200x",
+			"build": "build:3_8_15_2004_0",
+			"nex": [
+				[
+					3,
+					8,
+					3
+				]
+			]
+		},
+		{
+			"id": 270048256,
+			"aid": 1407375153601536,
+			"av": 1,
+			"name": "Trine",
+			"addr": [
+				"34.208.166.202",
+				43840
+			],
+			"key": "dbef95a0",
+			"branch": "branch:origin/release/ngs/3.6.x.2000",
+			"build": "build:3_6_19_2000_0",
+			"nex": [
+				[
+					3,
+					6,
+					1
+				]
+			]
+		},
+		{
+			"id": 269558272,
+			"aid": 1407375153111552,
+			"av": 16,
+			"name": "Trine 2",
+			"addr": [
+				"34.208.166.202",
+				44180
+			],
+			"key": "f9c35adc",
+			"branch": "branch:origin/release/ngs/3.4.x.3",
+			"build": "build:3_4_16_3_0",
+			"nex": [
+				[
+					3,
+					0,
+					1
+				]
+			]
+		},
+		{
+			"id": 270144512,
+			"aid": 1407375153697792,
+			"av": 1,
+			"name": "Ultratron",
+			"addr": [
+				"34.208.166.202",
+				43400
+			],
+			"key": "43a6de3a",
+			"branch": "branch:origin/release/ngs/3.6.x.2000",
+			"build": "build:3_6_19_2000_0",
+			"nex": [
+				[
+					3,
+					6,
+					1
+				]
+			]
+		},
+		{
+			"id": 269543936,
+			"aid": 1407375153097216,
+			"av": 96,
+			"name": "WARRIORS OROCHI 3 Hyper(JP)",
+			"addr": [
+				"34.208.166.202",
+				42800
+			],
+			"key": "d74bb27d",
+			"branch": "branch:origin/release/ngs/3.4.x.3",
+			"build": "build:3_4_16_3_0",
+			"nex": [
+				[
+					3,
+					0,
+					1
+				]
+			]
+		},
+		{
+			"id": 269592576,
+			"aid": 1407375153145856,
+			"av": 1,
+			"name": "Wii Party U",
+			"addr": [
+				"34.208.166.202",
+				43080
+			],
+			"key": "a5b77314",
+			"branch": "branch:origin/release/ngs/3.4.x.3",
+			"build": "build:3_4_16_3_0",
+			"nex": [
+				[
+					3,
+					3,
+					0
+				]
+			]
+		},
+		{
+			"id": 269574400,
+			"aid": 1407375153127680,
+			"av": 48,
+			"name": "XenobladeX",
+			"addr": [
+				"34.208.166.202",
+				45140
+			],
+			"key": "59d7be84",
+			"branch": "branch:origin/project/wup-ax5",
+			"build": "build:3_5_16_1221_0",
+			"nex": [
+				[
+					3,
+					5,
+					5
+				],
+				"AX5"
+			]
+		},
+		{
+			"id": 269563904,
+			"aid": 1407375153117184,
+			"av": 96,
+			"name": "Zen Pinball 2",
+			"addr": [
+				"34.208.166.202",
+				44140
+			],
+			"key": "2ff15f7e",
+			"branch": "branch:origin/release/ngs/3.4.x.3",
+			"build": "build:3_4_16_3_0",
+			"nex": [
+				[
+					3,
+					0,
+					1
+				]
+			]
+		},
+		{
+			"id": 269784832,
+			"aid": 1407375153338112,
+			"av": 64,
+			"name": "\u5f79\u6e80 \u9cf3\u51f0",
+			"addr": [
+				"34.208.166.202",
+				44120
+			],
+			"key": "23aab2d3",
+			"branch": "branch:origin/project/wauj",
+			"build": "build:3_6_21_2003_0",
+			"nex": [
+				[
+					3,
+					6,
+					14
+				],
+				"WAUJ"
+			]
+		}
 	]
 }
