@@ -354,7 +354,7 @@ function download(path, callback) {
 	req.send();
 }
 
-pages = ["wiiu", "switch", "nexwiiu"];
+pages = ["wiiu", "nexwiiu"];
 
 url = new URL(window.location.href);
 page = url.searchParams.get("page")
@@ -366,6 +366,9 @@ if (pages.includes(page)) {
 		info = data;
 		prepareUI();
 	});
+}
+else if (page == "switch") {
+	window.location.href = "https://titledb.nintendo-research.com/switch/table.html";
 }
 else {
 	document.documentElement.innerHTML = "<h1>Page not found</h1>";
