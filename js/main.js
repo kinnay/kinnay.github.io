@@ -368,7 +368,7 @@ if (pages.includes(page)) {
 	});
 }
 else if (page == "switch") {
-	window.location.href = "https://titledb.nintendo-research.com/switch/table.html";
+	window.location.href = "https://titledb.nintendo-research.com/switch/main.html";
 }
 else {
 	document.documentElement.innerHTML = "<h1>Page not found</h1>";
